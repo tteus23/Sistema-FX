@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateus Henrique | Desenvolvedor Front End</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <div class="loader-text">Carregando...</div>
+        </div>
+    </div>
+
+
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-dot" id="cursor-dot"></div>
+
+
+    <canvas id="particles-canvas"></canvas>
+
+    <nav>
+        <div class="logo">&lt;Dev /&gt;</div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#experience">Experiencia</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <span class="hero-badge">Disponivel para projetos</span>
+            <h1>Ola, eu sou <span class="gradient-text">Mateus Henrique</span></h1>
+            <h2>Desenvolvedor Front End</h2>
+            <p>Especialista em criar interfaces modernas, responsivas e intuitivas. Apaixonado por transformar designs em experiencias web incriveis com as tecnologias mais atuais.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                    Ver Projetos
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    Contato
+                </a>
+            </div>
+        </div>
+
+        <div class="floating-logos">
+            <div class="logo-item" style="--delay: 0s">
+                <img src="./img/html.png" alt="HTML">
+                <span>HTML</span>
+            </div>
+            <div class="logo-item" style="--delay: 0.2s">
+                <img src="./img/css.png" alt="CSS">
+                <span>CSS</span>
+            </div>
+            <div class="logo-item" style="--delay: 0.4s">
+                <img src="./img/react.png" alt="React">
+                <span>React</span>
+            </div>
+            <div class="logo-item" style="--delay: 0.6s">
+                <img src="./img/js.png" alt="JavaScript">
+                <span>JavaScript</span>
+            </div>
+            <div class="logo-item" style="--delay: 0.8s">
+                <img src="./img/laravel.png" alt="Laravel">
+                <span>Laravel</span>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="section-header reveal">
+            <h2>Sobre Mim</h2>
+            <p>Conheca um pouco mais sobre minha trajetoria</p>
+            <div class="section-line"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-image reveal">
+                <div class="about-image-wrapper">
+                    <img src="/img/perfil.jpeg" alt="Foto de perfil">
+                </div>
+            </div>
+            <div class="about-text reveal">
+                <h3>Desenvolvedor Apaixonado por Tecnologia</h3>
+                <p>Sou um desenvolvedor de software dedicado, com experiencia em criar aplicacoes web modernas. Minha jornada na programacao comecou por curiosidade e se transformou em uma paixao por resolver problemas complexos atraves do codigo.</p>
+                <p>Busco constantemente aprender novas tecnologias e aprimorar minhas habilidades, sempre focado em entregar solucoes de alta qualidade que fazem a diferenca.</p>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        <span>Desenvolvimento de Software</span>
+                    </div>
+                    <div class="highlight-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                        <span>Seguranca</span>
+                    </div>
+                    <div class="highlight-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+                        <span>Tecnologia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="section-header reveal">
+            <h2>Habilidades</h2>
+            <p>Tecnologias e ferramentas que domino</p>
+            <div class="section-line"></div>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-category reveal">
+                <h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    Linguagens de Programacao
+                </h3>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Laravel</span>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="80"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Python</span>
+                        <span class="skill-percent">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="75"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">React</span>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">HTML / CSS</span>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category reveal">
+                <h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Ferramentas e Tecnologias
+                </h3>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Git / GitHub</span>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">APIs REST</span>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="80"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Banco de Dados</span>
+                        <span class="skill-percent">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="75"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">VS Code</span>
+                        <span class="skill-percent">95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="95"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="experience" id="experience">
+        <div class="section-header reveal">
+            <h2>Experiencia</h2>
+            <p>Minha trajetoria de estudos e desenvolvimento</p>
+            <div class="section-line"></div>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item reveal">
+                <div class="timeline-content">
+                    <span class="timeline-date">2025</span>
+                    <h3>Estagio Prefeitura</h3>
+                    <p>Desenvolvimento de aplicacoes web para prefeituras e orgs municipais, focando em solucoes personalizadas e de alta qualidade.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-content">
+                    <span class="timeline-date">2023 - 2024</span>
+                    <h3>Estudos em Desenvolvimento Web</h3>
+                    <p>Especializacao em desenvolvimento Web PHP, criando Sistemas nativos e consumindo APIs.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-content">
+                    <span class="timeline-date">2022 - 2023</span>
+                    <h3>Cursos de Programacao</h3>
+                    <p>Conclusao de diversos cursos em JavaScript, Python e tecnologias web modernas.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-content">
+                    <span class="timeline-date">2021 - 2022</span>
+                    <h3>Inicio na Programacao</h3>
+                    <p>Primeiros passos no mundo da programacao, aprendendo logica e fundamentos atraves de projetos praticos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="section-header reveal">
+            <h2>Contato</h2>
+            <p>Vamos trabalhar juntos?</p>
+            <div class="section-line"></div>
+        </div>
+        <div class="contact-content">
+            <div class="contact-methods reveal">
+                <a href="https://wa.me/5543991409458?text=Oi!%20Gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank" class="method-btn whatsapp" title="WhatsApp">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                    <span>WhatsApp</span>
+                </a>
+                <a href="mailto:themateusbr007@gmail.com" class="method-btn email" title="Email">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                    <span>Email</span>
+                </a>
+                <a href="https://github.com/seuusuario" target="_blank" class="method-btn github" title="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/mateus-henrique-b-rosa-10035535b/?trk=opento_sprofile_topcard" target="_blank" class="method-btn linkedin" title="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">&lt;Dev /&gt;</div>
+            <div class="footer-social">
+                <a href="https://github.com/seuusuario" target="_blank" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/mateus-henrique-b-rosa-10035535b/?trk=opento_sprofile_topcard" target="_blank" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="mailto:themateusbr007@gmail.com" aria-label="Email">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </a>
+            </div>
+            <p class="footer-copyright">2026 - Mateus Henrique. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
